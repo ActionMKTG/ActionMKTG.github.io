@@ -25,7 +25,7 @@ body {
 	background: #ffffff; 
 	margin: 0; 
 	height: 100%; 
-	color: #384452;
+	color: #576a7f;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	}
@@ -42,7 +42,7 @@ p {
 	font-weight: 400;
 	font-size: 14px; 
 	line-height: 24px;
-	color: #384452; 
+	color: #576a7f; 
 	margin-top: 10px; 
 }
 
@@ -81,12 +81,12 @@ a:focus {
 ::-moz-selection  {
 	color: #fff;
 	text-shadow:none;
-	background:#384452;
+	background:#576a7f;
 }
 ::selection {
 	color: #fff;
 	text-shadow:none;
-	background:#384452;
+	background:#576a7f;
 }
 
 .centered {
@@ -118,21 +118,21 @@ a:focus {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color: #00b3fe;
+	color: #000DFC;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #00b3fe;
+	color: #000DFC;
 	background-color: transparent;
 }
 
 .navbar-default {
-	background-color: #384452;
+	background-color: #576a7f;
 	border-color: transparent;
 }
 
 .dropdown-menu {
-	background: #384452;
+	background: #576a7f;
 }
 
 .dropdown-menu > li > a {
@@ -143,8 +143,8 @@ a:focus {
 
 .btn-theme {
   color: #fff;
-  background-color: #384452;
-  border-color: #384452;
+  background-color: #576a7f;
+  border-color: #576a7f;
   margin: 4px;
 }
 .btn-theme:hover,
@@ -153,8 +153,8 @@ a:focus {
 .btn-theme.active,
 .open .dropdown-toggle.btn-theme {
   color: #fff;
-  background-color: #00b3fe;
-  border-color: #00b3fe;
+  background-color: #000DFC;
+  border-color: #000DFC;
 }
 
 .dmbutton:hover,
@@ -204,7 +204,7 @@ a:focus {
 }
 
 .hline {
-	border-bottom: 2px solid #384452;
+	border-bottom: 2px solid #576a7f;
 }
 
 .hline-w {
@@ -216,11 +216,13 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background-color: #00b3fe;
-	min-height: 0px;
+	/*background-color: #000DFC;*/
+/*	background-image: url("http://cardoneondemand.com/wp-content/uploads/cardone-slide-on-demand.jpg");
+*/	min-height: 0px;
 	padding-top: 100px;
 	padding-bottom: 50px;
 	text-align: center;
+/*	min-height: 400px; */
 }
 
 #headerwrap h3, h5 {
@@ -244,7 +246,7 @@ a:focus {
 }
 
 #service i {
-	color: #00b3fe;
+	color: #000DFC;
 	font-size: 60px;
 	padding: 15px;
 }
@@ -292,15 +294,15 @@ a:focus {
 {
 	height:100%;
 	width:100%;
-	background-color:#00b3fe;
-	background-color:rgba(0,179,254,.9);
+	background-color:#000DFC;
+	background-color:rgba(0,13,252,.9);
 	text-align:center;
 }
 
 /* Testimonials Wrap */
 #twrapback {
-    background-color: #00b3fe;
-    background-color:rgba(0,179,254,.8);
+    background-color: #000DFC;
+    background-color:rgba(0,13,252,.8);
     position: absolute;
     top: 0;
     left: 0;
@@ -358,7 +360,7 @@ a:focus {
 #footerwrap {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background: #384452;
+	background: #576a7f;
 }
 
 #footerwrap p {
@@ -376,8 +378,78 @@ a:focus {
 }
 
 #footerwrap i:hover {
-	color: #00b3fe
+	color: #000DFC
 }
+
+
+/*	################################################################
+	HERO VIDEO
+################################################################# */
+
+
+#home-video span.play-button {
+  background: url("#");
+  background-position: 0 0;
+  width: 150px;
+  height: 150px;
+  top: 20%;
+  left: 35%;
+  position: absolute;
+  display: block;
+}
+
+@media screen and (min-width: 992px) {
+  #home-video span.play-button {
+    top: 25%;
+    left: 47%;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  #home-video span.play-button {
+    top: 35%;
+  }
+}
+
+#home-video:hover span.play-button {
+  background-position: 0 150px;
+  width: 150px;
+  height: 150px;
+}
+
+#home-video span.close-button {
+  background: url("#");
+  background-position: 0 0;
+  width: 100px;
+  height: 100px;
+  top: 8%;
+  left: 2%;
+  position: absolute;
+  display: block;
+  z-index: 100;
+}
+
+#home-video span.close-button:hover {
+  background-position: 0 100px;
+  width: 100px;
+  height: 100px;
+}
+
+#home-video iframe#video-player {
+  min-height: 600px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+#home-video, #home-video img {
+  min-width: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
 
 /*	################################################################
 	PAGE CONFIGURATIONS
@@ -385,7 +457,7 @@ a:focus {
 /* General Tweaks */
 
 #blue {
-	background: #00b3fe;
+	background: #000DFC;
 	margin-top: 60px;
 	margin-bottom: 60px;
 	padding-top: 25px;
@@ -420,7 +492,7 @@ a:focus {
 }
 
 .ctitle {
-	color: #00b3fe;
+	color: #000DFC;
 	font-weight: 700;
 	margin-bottom: 15px;
 }
@@ -436,7 +508,7 @@ csmall {
 }
 
 .badge-theme {
-	background: #00b3fe;
+	background: #000DFC;
 }
 
 /* Contact Page */
