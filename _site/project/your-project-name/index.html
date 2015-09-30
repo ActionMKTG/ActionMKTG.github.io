@@ -346,28 +346,30 @@
 
 <script type="text/javascript">
 
-$('#player1').hide();
+	$('#player1').hide();
 
-$('#playbutton').click(function(e) {
-    e.stopPropagation();
-    if($('#player1').css('display') != 'none') {
-        var iFrame = $('#player1 iframe');
-        var iFrameSRC = iFrame.attr('src');
-        iFrame.attr('src',''); 
-        iFrame.attr('src', iFrameSRC);
-    }
-    $('#player1').slideToggle('slow');
-});
+	$('#playbutton').click(function(e) {
+	    e.stopPropagation();
+	    if($('#player1').css('display') != 'none') {
+	        var iFrame = $('#player1 iframe');
+	        var iFrameSRC = iFrame.attr('src');
+	        iFrame.attr('src',''); 
+	        iFrame.attr('src', iFrameSRC);
+	    }
+	    $('#player1').slideToggle('slow');
+	    $("#player1").autoplay('true');
+	});
 
-$(document).click(function() {
-    if($('#player1').css('display') != 'none') {
-        $('#player1').slideUp('slow');
-        var iFrame = $('#player1 iframe');
-        var iFrameSRC = iFrame.attr('src');
-        iFrame.attr('src',''); 
-        iFrame.attr('src', iFrameSRC);
-    }
-});
+	$(document).click(function() {
+	    if($('#player1').css('display') != 'none') {
+	        $('#player1').slideUp('slow');
+	        var iFrame = $('#player1 iframe');
+	        var iFrameSRC = iFrame.attr('src');
+	        iFrame.attr('src',''); 
+	        iFrame.attr('src', iFrameSRC);
+	    }
+	});
+	
 </script>
     </body>
 </html>
