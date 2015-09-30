@@ -12,7 +12,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 @import url("prettyPhoto.css") screen;
 @import url("hoverex-all.css") screen;
-
+@import url(https://fonts.googleapis.com/css?family=Orbitron:400,700,900,500);
 /*	################################################################
 	1. GENERAL STRUCTURES
 ################################################################# */
@@ -103,7 +103,7 @@ a:focus {
 }
 
 .navbar-brand {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Orbitron', sans-serif;
 	font-weight: 900;
 }
 
@@ -217,16 +217,25 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background-color: {{ site.colors.primary }};
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000dfc+0,000533+100 */
+	background: #000dfc; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #000dfc 0%, #000533 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#000dfc), color-stop(100%,#000533)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #000dfc 0%,#000533 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #000dfc 0%,#000533 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #000dfc 0%,#000533 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #000dfc 0%,#000533 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000dfc', endColorstr='#000533',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	min-height: 0px;
 	padding-top: 100px;
 	padding-bottom: 50px;
 	text-align: center;
 }
 
-#headerwrap h3, h5 {
-	color: #FEC40E;
-	font-weight: 400;
+#headerwrap h1, #headerwrap h3, #headerwrap h5, #headerwrap p {
+	color: white;
+	font-family: 'Orbitron', sans-serif;
+	font-weight: 700;
 }
 
 #headerwrap h1 {
