@@ -414,14 +414,18 @@
 
 	$('#playbutton').click(function(e) {
 	    e.stopPropagation();
+	    var video = document.getElementById("vid");
 	    if($('#player1').css('display') != 'none') {
 	        var iFrame = $('#player1 iframe');
 	        var iFrameSRC = iFrame.attr('src');
 	        iFrame.attr('src',''); 
 	        iFrame.attr('src', iFrameSRC);
+	        video.pause();
 	    }
+	       else {
+            video.play();
+        }
 	    $('#player1').slideToggle('slow');
-	    $("#player1").autoplay('true');
 	});
 
 	$(document).click(function() {
@@ -433,7 +437,6 @@
 	        iFrame.attr('src', iFrameSRC);
 	    }
 	});
-	
 </script>
     </body>
 </html>
