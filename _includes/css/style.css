@@ -211,18 +211,17 @@ a:focus {
 	border-bottom: 2px solid #ffffff;
 	margin-bottom: 25px;
 }
+
 /*	################################################################
 	SITE WRAPS
 ################################################################# */
 
 #headerwrap {
-	/*background-color: {{ site.colors.primary }};*/
-/*	background-image: url("http://cardoneondemand.com/wp-content/uploads/cardone-slide-on-demand.jpg");
-*/	min-height: 0px;
+	background-color: #FEC40E;
+	min-height: 0px;
 	padding-top: 100px;
 	padding-bottom: 50px;
 	text-align: center;
-/*	min-height: 400px; */
 }
 
 #headerwrap h3, h5 {
@@ -246,7 +245,7 @@ a:focus {
 }
 
 #service i {
-	color: {{ site.colors.primary }};
+	color: {{ site.colors.primary }};
 	font-size: 60px;
 	padding: 15px;
 }
@@ -294,14 +293,14 @@ a:focus {
 {
 	height:100%;
 	width:100%;
-	background-color:{{ site.colors.primary }};
+	background-color:{{ site.colors.primary }};
 	background-color:rgba({{ site.colors.primary_rgb }},.9);
 	text-align:center;
 }
 
 /* Testimonials Wrap */
 #twrapback {
-    background-color: {{ site.colors.primary }};
+    background-color: {{ site.colors.primary }};
     background-color:rgba({{ site.colors.primary_rgb }},.8);
     position: absolute;
     top: 0;
@@ -360,7 +359,7 @@ a:focus {
 #footerwrap {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background: {{ site.colors.secondary }};
+	background: {{ site.colors.secondary }};
 }
 
 #footerwrap p {
@@ -378,7 +377,7 @@ a:focus {
 }
 
 #footerwrap i:hover {
-	color: {{ site.colors.primary }}
+	color: {{ site.colors.primary }}
 }
 
 
@@ -388,7 +387,7 @@ a:focus {
 
 
 #home-video span.play-button {
-  background: url("#");
+  background: url("http://i.imgur.com/USMgaen.png");
   background-position: 0 0;
   width: 150px;
   height: 150px;

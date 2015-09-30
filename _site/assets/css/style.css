@@ -211,18 +211,17 @@ a:focus {
 	border-bottom: 2px solid #ffffff;
 	margin-bottom: 25px;
 }
+
 /*	################################################################
 	SITE WRAPS
 ################################################################# */
 
 #headerwrap {
-	/*background-color: #000DFC;*/
-/*	background-image: url("http://cardoneondemand.com/wp-content/uploads/cardone-slide-on-demand.jpg");
-*/	min-height: 0px;
+	background-color: #FEC40E;
+	min-height: 0px;
 	padding-top: 100px;
 	padding-bottom: 50px;
 	text-align: center;
-/*	min-height: 400px; */
 }
 
 #headerwrap h3, h5 {
@@ -388,7 +387,7 @@ a:focus {
 
 
 #home-video span.play-button {
-  background: url("#");
+  background: url("http://i.imgur.com/USMgaen.png");
   background-position: 0 0;
   width: 150px;
   height: 150px;
