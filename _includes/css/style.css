@@ -108,11 +108,17 @@ a:focus {
 }
 
 .navbar-header .navbar-brand {
-	color: white;
+	color: #576a7f;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+
+	color: #FCC200;
+
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: white;
+	color: #576a7f;
 	font-weight: 700;
 	font-size: 12px;
 }
@@ -127,7 +133,7 @@ a:focus {
 }
 
 .navbar-default {
-	background-color: {{ site.colors.secondary }};
+	background-color: #F7FAFF;
 	border-color: transparent;
 }
 
