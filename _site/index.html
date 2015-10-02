@@ -70,7 +70,7 @@
 
            <div class="col-lg-8 col-lg-offset-2 himg">
                 
-                <img src="/assets/img/action-logo.svg" class="img-responsive">
+                <img id="action-logo"src="/assets/img/action-logo.svg" class="img-responsive">
                 <div  id="playbutton">
                   <h3><i class="fa fa-youtube-play fa-5x"></i></h3>
                   <p>Click to Play | Pause</p>
@@ -460,28 +460,18 @@
 	$('#playbutton').click(function(e) {
 	    e.stopPropagation();
 	    var video = document.getElementById("vid");
+	    var logo = document.getElementById("action-logo")
 	    if($('#player1').css('display') != 'none') {
-	        // var iFrame = $('#player1 iframe');
-	        // var iFrameSRC = iFrame.attr('src');
-	        // iFrame.attr('src',''); 
-	        // iFrame.attr('src', iFrameSRC);
 	        video.pause();
 	    }
 	       else {
             video.play();
         }
+        $('#action-logo').slideToggle('slow');
 	    $('#player1').slideToggle('slow');
+
 	});
 
-	// $(document).click(function() {
-	//     if($('#player1').css('display') != 'none') {
-	//         $('#player1').slideUp('slow');
-	//         var iFrame = $('#player1 iframe');
-	//         var iFrameSRC = iFrame.attr('src');
-	//         iFrame.attr('src',''); 
-	//         iFrame.attr('src', iFrameSRC);
-	//     }
-	// });
 </script>
 
 

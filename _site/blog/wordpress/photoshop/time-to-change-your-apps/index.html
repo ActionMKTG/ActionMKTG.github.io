@@ -344,28 +344,18 @@ It was popularised in the 1960s with the release of Letraset sheets containing L
 	$('#playbutton').click(function(e) {
 	    e.stopPropagation();
 	    var video = document.getElementById("vid");
+	    var logo = document.getElementById("action-logo")
 	    if($('#player1').css('display') != 'none') {
-	        // var iFrame = $('#player1 iframe');
-	        // var iFrameSRC = iFrame.attr('src');
-	        // iFrame.attr('src',''); 
-	        // iFrame.attr('src', iFrameSRC);
 	        video.pause();
 	    }
 	       else {
             video.play();
         }
+        $('#action-logo').slideToggle('slow');
 	    $('#player1').slideToggle('slow');
+
 	});
 
-	// $(document).click(function() {
-	//     if($('#player1').css('display') != 'none') {
-	//         $('#player1').slideUp('slow');
-	//         var iFrame = $('#player1 iframe');
-	//         var iFrameSRC = iFrame.attr('src');
-	//         iFrame.attr('src',''); 
-	//         iFrame.attr('src', iFrameSRC);
-	//     }
-	// });
 </script>
 
 
