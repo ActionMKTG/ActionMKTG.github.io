@@ -28,7 +28,7 @@ body {
 	height: 100%; 
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-	color: #576a7f;
+	color: #;
 	}
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,7 +44,7 @@ p {
 	font-size: 14px; 
 	line-height: 24px;
 	margin-top: 10px;
-	color: #576a7f;  
+	color: #;  
 }
 
 img {
@@ -82,12 +82,12 @@ a:focus {
 ::-moz-selection  {
 	color: #fff;
 	text-shadow:none;
-	background:#576a7f;
+	background:#;
 }
 ::selection {
 	color: #fff;
 	text-shadow:none;
-	background:#576a7f;
+	background:#;
 }
 
 .centered {
@@ -139,7 +139,7 @@ a:focus {
 }
 
 .dropdown-menu {
-	background: #576a7f;
+	background: #;
 }
 
 .dropdown-menu > li > a {
@@ -150,8 +150,8 @@ a:focus {
 
 .btn-theme {
   color: #fff;
-  background-color: #576a7f;
-  border-color: #576a7f;
+  background-color: #;
+  border-color: #;
   margin: 4px;
 }
 .btn-theme:hover,
@@ -211,7 +211,7 @@ a:focus {
 }
 
 .hline {
-	border-bottom: 2px solid #576a7f;
+	border-bottom: 2px solid #;
 }
 
 .hline-w {
@@ -321,14 +321,14 @@ a:focus {
 	height:100%;
 	width:100%;
 	background-color:#000DFC;
-	background-color:rgba(0,13,252,.9);
+	background-color:rgba(0,576a7f13,252,.9);
 	text-align:center;
 }
 
 /* Testimonials Wrap */
 #twrapback {
     background-color: #000DFC;
-    background-color:rgba(0,13,252,.8);
+    background-color:rgba(0,576a7f13,252,.8);
     position: absolute;
     top: 0;
     left: 0;
@@ -386,7 +386,7 @@ a:focus {
 #footerwrap {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background: #576a7f;
+	background: #;
 }
 
 #footerwrap p {
@@ -515,7 +515,7 @@ header h1 {
   font-weight: 700;
   max-width: 700px;
   margin-bottom: 10px;
-  color:#FCC200;
+  color: #FCC200;
 }
 
 header p {
@@ -531,7 +531,7 @@ header p {
 .play {
   width: 70px;
   height: 70px;
-  background: #222;
+  background:  #FCC200;
   display: block;
   margin: 0 auto;
   /* Important for :after */
@@ -541,7 +541,8 @@ header p {
 }
 
 .play:hover {
-  background: #333;
+  opacity: .5;
+  background:;
   cursor: pointer;
 }
 

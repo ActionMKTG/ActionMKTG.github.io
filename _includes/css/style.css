@@ -515,7 +515,7 @@ header h1 {
   font-weight: 700;
   max-width: 700px;
   margin-bottom: 10px;
-  color:#FCC200;
+  color: {{ site.colors.action_yellow }};
 }
 
 header p {
@@ -525,13 +525,13 @@ header p {
   max-width: 700px;
   margin-bottom: 20px;
   opacity: .65;
-  color: #FCC200;
+  color: {{ site.colors.action_yellow }};
 }
 
 .play {
   width: 70px;
   height: 70px;
-  background: #222;
+  background:  {{ site.colors.action_yellow }};
   display: block;
   margin: 0 auto;
   /* Important for :after */
@@ -541,7 +541,8 @@ header p {
 }
 
 .play:hover {
-  background: #333;
+  opacity: .5;
+  background:;
   cursor: pointer;
 }
 
