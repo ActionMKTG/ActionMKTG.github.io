@@ -5,7 +5,7 @@ title: ACT!ON
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
-url: "http://yourdomain.com"
+url: "http://onlyaction.com"
 
 # Build settings
 markdown: kramdown
@@ -14,8 +14,8 @@ excerpt_separator: <!--more--> #use this in posts to define how long the excerpt
 
 colors:  #in hex code if not noted else
   primary: "#000DFC" #"#F70031" 
-  primary_rgb: "0,13,252" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.  
-  secondary: "#576a7f" #"#33004D"
+  primary_rgb: "0,576a7f13,252" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.  
+  secondary: "#" #"#33004D"
   link: "#428bca"
   link_hover: "#01b2fe"
   footer_heading: "#ffffff"
@@ -40,11 +40,11 @@ social:
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
   - lines: 
-    - Some Ave, 987,
-    - 23890, New York,
-    - United States.
-email: hello@solidtheme.com
-tel: +34 8493-4893
+    - 3160 Campus Dr Suite 200
+    - 30071, Norcross,
+    - Georgia.
+email: contact@onlyaction.com
+tel: (800) 478-8818
 
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
@@ -100,7 +100,7 @@ clients:
     img: client04.png
     
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+about: "Looking for an automotive marketing partner that can help make you more successful, profitable, trusted and preferred? You've come to the right place."
 
 # Testimonial content. Shown on Home and About page. 
 testimonial:

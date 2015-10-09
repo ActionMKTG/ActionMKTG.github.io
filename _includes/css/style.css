@@ -412,7 +412,7 @@ a:focus {
 	HERO VIDEO
 ################################################################# */
 
-
+/*
 #home-video span.play-button {
   background: url("http://i.imgur.com/USMgaen.png");
   background-position: 0 0;
@@ -475,6 +475,142 @@ a:focus {
   overflow: hidden;
   cursor: pointer;
 }
+*/
+
+
+/* Lazy-man Reset */
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* Fullscreen Section */
+header {
+  width: 100%;
+  /* 100% height */
+  height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  /* Fancy flex-box centering */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+	background: url('../img/yellow-ferrari.jpg'); 
+	background-size: cover;
+	background-position: center;
+	min-height: 0px;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+header h1 {
+  font-size: 40px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  max-width: 700px;
+  margin-bottom: 10px;
+  color:#FCC200;
+}
+
+header p {
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 700px;
+  margin-bottom: 20px;
+  opacity: .65;
+  color: #FCC200;
+}
+
+.play {
+  width: 70px;
+  height: 70px;
+  background: #222;
+  display: block;
+  margin: 0 auto;
+  /* Important for :after */
+  position: relative;
+  /* Makes a circle */
+  border-radius: 50%;
+}
+
+.play:hover {
+  background: #333;
+  cursor: pointer;
+}
+
+.play:after {
+  position: absolute;
+  content: "";
+  /* Centering */
+  top: 50%;
+  margin-top: -15px;
+  left: 50%;
+  margin-left:  -8px;
+  /* CSS Triangle */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 20px;
+  border-color: transparent transparent transparent #ffffff;
+}
+
+/* Fullscreen Overlay */
+.overlay {
+  width: 100%;
+  height: 100vh;
+  /* 50% opacity black */
+  background: rgba(0,0,0,.5);
+  /* Stays locked on scroll */
+  position: fixed;
+  /* On top of the rest*/
+  z-index: 2;
+  /* Hidden */
+  opacity: 0;
+  /* No interference */
+  left: -100%;
+  /* CSS3 Transition */
+  transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+}
+
+/* 90% width container */
+.video-container {
+  width: 90%;
+  /* Centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.close {
+  width: 20px;
+  fill: white;
+  position: absolute;
+  right: 0;
+  /* Bring above video */
+  top: -30px;
+}
+
+.close:hover {
+  /* 50% opacity white */
+  fill: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+/* Class to fade in overlay */
+.show {
+  opacity: 1;
+}
+
 
 
 /*	################################################################
